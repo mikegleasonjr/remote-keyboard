@@ -1,0 +1,4 @@
+github.com/mozillazg/go-unidecode v0.1.0 h1:wAIMDf/yTexXKxT5TkctLwmClGSyuoJaZDRMclFNq8U=
+github.com/mozillazg/go-unidecode v0.1.0/go.mod h1:fYMdhyjni9ZeEmS6OE/GJHDLsF8TQvIVDwYR/drR26Q=
+github.com/pkg/term v0.0.0-20180730021639-bffc007b7fd5 h1:tFwafIEMf0B7NlcxV/zJ6leBIa81D3hgGSgsE5hCkOQ=
+github.com/pkg/term v0.0.0-20180730021639-bffc007b7fd5/go.mod h1:eCbImbZ95eXtAUIbLAuAVnBnwf83mjf6QIVH8SHYwqQ=

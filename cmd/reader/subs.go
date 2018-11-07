@@ -1,0 +1,53 @@
+package main
+
+// Various Arduino-specific keys.
+// taken from Java/libraries/Keyboard/src/Keyboard.h
+const (
+	ArduinoKeyLeftCtrl   byte = 0x80
+	ArduinoKeyLeftShift  byte = 0x81
+	ArduinoKeyLeftAlt    byte = 0x82
+	ArduinoKeyLeftGui    byte = 0x83
+	ArduinoKeyRightCtrl  byte = 0x84
+	ArduinoKeyRightShift byte = 0x85
+	ArduinoKeyRightAlt   byte = 0x86
+	ArduinoKeyRightGui   byte = 0x87
+	ArduinoKeyUpArrow    byte = 0xDA
+	ArduinoKeyDownArrow  byte = 0xD9
+	ArduinoKeyLeftArrow  byte = 0xD8
+	ArduinoKeyRightArrow byte = 0xD7
+	ArduinoKeyBackspace  byte = 0xB2
+	ArduinoKeyTab        byte = 0xB3
+	ArduinoKeyReturn     byte = 0xB0
+	ArduinoKeyEsc        byte = 0xB1
+	ArduinoKeyInsert     byte = 0xD1
+	ArduinoKeyDelete     byte = 0xD4
+	ArduinoKeyPageUp     byte = 0xD3
+	ArduinoKeyPageDown   byte = 0xD6
+	ArduinoKeyHome       byte = 0xD2
+	ArduinoKeyEnd        byte = 0xD5
+	ArduinoKeyCapsLock   byte = 0xC1
+	ArduinoKeyF1         byte = 0xC2
+	ArduinoKeyF2         byte = 0xC3
+	ArduinoKeyF3         byte = 0xC4
+	ArduinoKeyF4         byte = 0xC5
+	ArduinoKeyF5         byte = 0xC6
+	ArduinoKeyF6         byte = 0xC7
+	ArduinoKeyF7         byte = 0xC8
+	ArduinoKeyF8         byte = 0xC9
+	ArduinoKeyF9         byte = 0xCA
+	ArduinoKeyF10        byte = 0xCB
+	ArduinoKeyF11        byte = 0xCC
+	ArduinoKeyF12        byte = 0xCD
+	ArduinoKeyF13        byte = 0xF0
+	ArduinoKeyF14        byte = 0xF1
+	ArduinoKeyF15        byte = 0xF2
+	ArduinoKeyF16        byte = 0xF3
+	ArduinoKeyF17        byte = 0xF4
+	ArduinoKeyF18        byte = 0xF5
+	ArduinoKeyF19        byte = 0xF6
+	ArduinoKeyF20        byte = 0xF7
+	ArduinoKeyF21        byte = 0xF8
+	ArduinoKeyF22        byte = 0xF9
+	ArduinoKeyF23        byte = 0xFA
+	ArduinoKeyF24        byte = 0xFB
+)
