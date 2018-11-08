@@ -1,4 +1,4 @@
-package main // 113
+package main
 
 import (
 	"bytes"
@@ -15,18 +15,26 @@ import (
 )
 
 const (
-	remoteIP          = "192.168.x.x"
 	remotePort        = 4210
 	ctrla      uint32 = 0x01
 	ctrlc      uint32 = 0x03
 )
 
 func main() {
-	remote := net.ParseIP(remoteIP) // TODO, read that as arg instead
+	if len(os.Args[1:]) != 1 {
+		fmt.Fprintln(os.Stderr, "usage: reader <ip>")
+		os.Exit(1)
+	}
+
+	remote := net.ParseIP(os.Args[1])
+	if remote == nil {
+		fmt.Fprintf(os.Stderr, "invalid ip specified: %s\n", os.Args[1])
+		os.Exit(1)
+	}
 
 	t, err := term.Open("/dev/tty", term.RawMode)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "error opening /dev/tty: %s", err)
+		fmt.Fprintf(os.Stderr, "error opening /dev/tty: %s\n", err)
 		os.Exit(1)
 	}
 	defer t.Close()
